@@ -22,9 +22,9 @@ from . import views as myapp_views ,views
 from login.views import SignUpView, logout
 
 app_name = 'login'
+
 urlpatterns = [
-    #path(r'^$', include('django.contrib.auth.urls')),
-    #),
+    
     #sign in form
     re_path(
         'login/',
@@ -59,7 +59,6 @@ urlpatterns = [
     {'template_name':'login/reset_password_done.html'},
      name='password_reset_done'),
 
-    
-    
+
 
 ]
