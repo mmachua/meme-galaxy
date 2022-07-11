@@ -174,14 +174,14 @@ LOGOUT_REDIRECT_URL = "/accounts/login/"
 
 LOGIN_URL = '/accounts/login/'
 
-LOGIN_EXEMPT_URLS = (
-    r'^login/logout/$',
-    r'^login/accounts/$',
-    r'^login/reset-password/$',
-    r'^login/reset-password/done/$',
-    r'login/reset-password/confirm/(?P<uidb64>[0-9A-Za-z]+)-(?P<token>,+)/$',
-    r'^login/reset-password/complete/$',
-)
+# LOGIN_EXEMPT_URLS = (
+#     r'^login/logout/$',
+#     r'^login/accounts/$',
+#     r'^login/reset-password/$',
+#     r'^login/reset-password/done/$',
+#     r'login/reset-password/confirm/(?P<uidb64>[0-9A-Za-z]+)-(?P<token>,+)/$',
+#     r'^login/reset-password/complete/$',
+# )
 
 
 EMAIL_HOST = 'localhost'
