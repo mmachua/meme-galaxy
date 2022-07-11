@@ -31,9 +31,6 @@ ALLOWED_HOSTS = ["memegalaxy.herokuapp.com",'127.0.0.1']
 # Application definition
 
 INSTALLED_APPS = [
-    'home',
-    'login',
-    'hitcount',
     
     'django.contrib.admin',
     'django.contrib.auth',
@@ -42,7 +39,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'crispy_forms',
-
+    'home',
+    'login',
+    'hitcount',
+    
     #'django.contrib.sites',
     #'allauth',
     #'allauth.account',
@@ -67,8 +67,7 @@ ROOT_URLCONF = 'website.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        #'DIRS': [os.path.join(BASE_DIR, 'templates'),],
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates'),],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
