@@ -71,7 +71,7 @@ class PostForm(forms.ModelForm):
     post = forms.CharField(widget=forms.TextInput(
         attrs={
             'class': 'form-control',
-            'placeholder': 'Write the title of your meme post...'
+            'placeholder': 'Write the Caption...'
         }
     ))
     image1 = forms.ImageField()
@@ -82,9 +82,9 @@ class PostForm(forms.ModelForm):
             'post',
             
             'image1',
-            'image2',
-            'image3',
-            'image4',
+            #'image2',
+            #'image3',
+            #'image4',
         ]
     
     def save(self, user=None):
